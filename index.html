@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-8 bmi-calculator">
+            <div id="calculator">
+                <h2>Food Energy Converter</h2>
+                <br>
+                <form id="energyForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="value">Value:</label><br>
+                            <input type="number" id="value" value="1" min="1" required>
+                            <br><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="type">Type:</label><br>
+                            <select id="type" required>
+                                <option value="KCAL">Calorie [Nutritional, kcal]</option>
+                                <option value="CAL">calorie [cal]</option>
+                                <option value="KJ">Kilojoules [kJ]</option>
+                                <option value="J">Joules [J]</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div class="col-md-6 valueouput">
+                            <label for="resultlabel">Result:</label><br>
+                            <div class="output" id="result">4.1840</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="resulttypelabel">Type:</label><br>
+                            <select id="resulttype">
+                                <option value="KCAL">Calorie [Nutritional, kcal]</option>
+                                <option value="CAL">calorie [cal]</option>
+                                <option value="KJ" selected>Kilojoules [kJ]</option>
+                                <option value="J">Joules [J]</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <input type="submit" value="Calculate" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+        <div class="cols col_4_of_12">
+            <h3>Sidebar</h3>
+        </div>
+    </div>
+</div>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
